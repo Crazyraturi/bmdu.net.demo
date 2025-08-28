@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMDU: Digital Utilizaction</title>
+  <link rel="stylesheet" href="./css/styleS.css">
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid ">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="./images/BMDU logo .png" loading="lazy" alt="Logo" style="height: 50px;">
+    </a>
+
+    <!-- Toggle for mobile -->
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+</button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <!-- Close button (only visible in mobile) -->
+      <div class="d-lg-none text-end mb-3">
+        <button class="btn btn-close" id="closeNavbar"></button>
+      </div>
+
+      <ul class="navbar-nav mx-auto">
+        
+        <!-- Services Mega Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown">
+            Services
+          </a>
+          <div class="dropdown-menu mega-menu services-menu">
+            <div class="mega-menu-container">
+              <div class="mega-column">
+                <h5>Web Design</h5>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Parallax Website Designing</a>
+                <a class="dropdown-item hover-arrow   rounded-1" href="#">Static Website Designing</a>
+                <a class="dropdown-item hover-arrow   rounded-1" href="#">Dynamic Website Designing</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Business Website <br> Designing & Development</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Alumni Website <br> Designing & Development</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Custom Website Designing</a>
+              </div>
+              <div class="mega-column">
+                <h5>Web Development</h5>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Ecommerce Development</a>
+                <a class="dropdown-item hover-arrow rounded-1" href="#">Core PHP Website Development</a>
+                <a class="dropdown-item hover-arrow rounded-1" href="#">Website Development with Angular JS</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="/webDevAluminiPage">Alumni Website Development</a>
+              </div>
+              <div class="mega-column">
+                <h5>App Development</h5>
+                <a class="dropdown-item hover-arrow  rounded-1" href="/appDevelopment">Android App Development</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="/ios">iOS App Development</a>
+                <a class="dropdown-item hover-arrow   rounded-1" href="/reactNative">React Native App Development</a>
+              </div>
+              <div class="mega-column">
+                <h5>Graphics Design</h5>
+              <a class="dropdown-item hover-arrow   rounded-1" href="#">Logo Design</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Flyers & Banners</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Brochure Design</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Leaflet Design</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Visiting Cards</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Package Design</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="/motionDesignPage">Motion Graphics Designing</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Video Creation</a>
+              </div>
+              <div class="mega-column">
+                <h5>Digital Marketing</h5>
+                <a class="dropdown-item hover-arrow  rounded-1" href="">SEO</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">PPC</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">SMO</a>
+                <a class="dropdown-item hover-arrow rounded-1" href="#">Google My Business</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">ASO</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">ORM</a>
+                <a class="dropdown-item hover-arrow  rounded-1" href="#">Lead Generation</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Location Based Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="locationServicesDropdown">
+            Location Based Services
+          </a>
+          <div class="dropdown-menu mega-menu location-menu">
+            <div class="mega-menu-container">
+              <div class="mega-column">
+                <h5>India</h5>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">SEO Services in Delhi</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">ORM Services in Delhi</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">SMO Services in Delhi</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">Web Designing Company in Delhi</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="/localSeo">Local SEO Services in Delhi</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">PPC Services in Delhi</a>
+              </div>
+              <div class="mega-column">
+                <h5>USA</h5>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">SEO Services in California</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">ORM Services in Dallas</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">SMO Services in Los Angeles</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">SEO Services in PA</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="/localSeo">Local SEO Services in New York</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">PPC Services in San Diego</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Hire Team -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="hireTeamDropdown">
+            Hire Team
+          </a>
+          <div class="dropdown-menu mega-menu hire-menu">
+            <div class="mega-menu-container single-column">
+              <div class="mega-column">
+                <a class="dropdown-item hover-arrow rounded-1" href="#">Hire UI Designer</a>
+                <a class="dropdown-item hover-arrow rounded-1" href="#">Website Maintenance Team</a>
+                <a class="dropdown-item hover-arrow rounded-1" href="#">Digital Marketing Team</a>
+                <a class="dropdown-item hover-arrow rounded-1" href="#">Social Media Management Team</a>
+                <a class="dropdown-item hover-arrow rounded-1" href="#">App Maintenance Team</a>
+                <a class="dropdown-item hover-arrow rounded-1" href="#">PR Team</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Industries -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="industriesDropdown">
+            Industries
+          </a>
+          <div class="dropdown-menu mega-menu industries-menu">
+            <div class="mega-menu-container single-column">
+              <div class="mega-column">
+                <h5>Industries</h5>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">Accounting</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="/bioTechPage">Biotech</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">Healthcare</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="#">Financial</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="/engineeringPage">Engineering</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="/hospitalityPage">Hospitalities</a>
+                <a class="dropdown-item hover-arrow ps-1 rounded-1" href="/retailPage">Retail</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- About & Contact -->
+        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/smoCalculatorPage">SEO Calculator</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Website Calculator</a></li>
+      </ul>
+  </div>
+</nav>
+
+  <!-- Outlet -->
+  <main id="outlet">Loading...</main>
+
+  <!-- Footer -->
+
+      <div class="" style="
+      width: 100%;
+       margin-top: 100px;
+         background-image: url('./images/footer Background.jpeg');
+          background-size: cover;
+          background-repeat: no-repeat;
+         background-position: center;
+           color: white;">
+           
+        <footer class="pt-5">
+          <!-- Top CTA Section -->
+          <div class="mb-5 p-5">
+            <div
+              class="row align-items-center justify-content-between text-center text-md-start"
+            >
+              <div class="col-md-8">
+                <h2 class="text-white" style="font-size: 4vw">
+                  Ready To Get Free Consultations For Any Kind Of IT Solutions?
+                </h2>
+              </div>
+              <div
+                class="col-md-3 mt-3 mt-md-0 d-flex justify-content-center justify-content-md-end"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center bg-white text-black rounded-5 border border-black p-2"
+                  style="width: 200px; height: 50px; cursor: pointer"
+                >
+                  <span class="fs-6 me-2">Get a Quote</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Footer Content -->
+          <div class="p-5">
+            <div class="row text-white text-center text-md-start">
+              <!-- Column 1: Logo and Description -->
+              <div class="col-md-3 mb-4">
+                <img
+                loading="lazy"
+                  src="./images/BMDU logo .png"
+                  alt="Logo"
+                  style="width: 120px"
+                />
+                <p class="mt-3">
+                  We offer a comprehensive suite of digital marketing services —
+                  SEO, social media, content creation & PPC advertising.
+                </p>
+
+                <!-- Social Icons -->
+                <div
+                  class="d-flex gap-2 mt-3 justify-content-center justify-content-md-start"
+                >
+                  <!-- Facebook -->
+                  <div class="bg-white rounded-circle px-2 py-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="none"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                      />
+                    </svg>
+                  </div>
+                  <!-- Instagram -->
+                  <div class="bg-white rounded-circle px-2 py-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="none"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                  </div>
+                  <!-- Twitter -->
+                  <div class="bg-white rounded-circle px-2 py-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="none"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                      />
+                    </svg>
+                  </div>
+                  <!-- LinkedIn -->
+                  <div class="bg-white rounded-circle px-2 py-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="none"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      />
+                      <rect width="4" height="12" x="2" y="9" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 2: Navigation -->
+              <div class="col-md-3 mb-4">
+                <h5>Navigation</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Service</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Agency</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Case Study</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Resource</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Column 3: Legal -->
+              <div class="col-md-3 mb-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Copyright</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:Hey@bmdu.com"
+                      class="text-white text-decoration-none"
+                      >Email Address</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Column 4: Contact Info -->
+              <div class="col-md-3 mb-4">
+                <h5>Contact</h5>
+                <ul class="list-unstyled">
+                  <li
+                    class="mb-2 d-flex gap-2 justify-content-center justify-content-md-start align-items-start"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M13.8 16.6a1 1 0 0 0 1.2-.3l.4-.5A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.5.4a1 1 0 0 0-.3 1.2 14 14 0 0 0 6.4 6.4"
+                      />
+                    </svg>
+                    <a
+                      href="tel:+917599490885"
+                      class="text-white text-decoration-none"
+                      >+91 75994 90885</a
+                    >
+                  </li>
+                  <li
+                    class="mb-2 d-flex gap-2 justify-content-center justify-content-md-start align-items-start"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                    </svg>
+                    <a
+                      href="mailto:Hey@bmdu.com"
+                      class="text-white text-decoration-none"
+                      >Hey@bmdu.com</a
+                    >
+                  </li>
+                  <li
+                    class="d-flex gap-2 justify-content-center justify-content-md-start align-items-start"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M20 10c0 4.993-5.5 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.5 20.2 4 15 4 10a8 8 0 0 1 16 0"
+                      />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span
+                > B-41, B-Block, Sector-63, Noida,</br> Uttar Pradesh 201301 (INDIA)</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Strip -->
+          <div class="text-center text-white mt-4 pt-3 border-top border-light">
+            <small>&copy; 2025 BMDU. All rights reserved.</small>
+          </div>
+        </footer>
+      </div>
+<script>
+  // 1. Define routes (URLs -> HTML files)
+  const routes = {
+    "/": "/landingPage.html",   
+    "/about": "/aboutUsPage.html",
+    "/contact": "/contactUsPage.html",
+    "/appDevelopment": "/appDevelopmentPage.html",
+    "/webDevAluminiPage": "/webDevAluminiPage.html",
+    "/localSeo": "/localSeoPage.html",
+    "/smoCalculator": "/smoCalculatorPage.html",
+    "/smoCalculatorPage": "/smoCalculatorPage.html",
+    "/appDevelopmentPage": "/appDevelopmentPage.html",
+    "/ios": "/iosPage.html",
+    "/reactNative": "/reactNativePage.html",
+    "/bioTechPage": "/bioTechPage.html",
+    "/engineeringPage": "/engineeringPage.html",
+    "/hospitalityPage": "/hospitalityPage.html",
+    "/retailPage": "/retailPage.html",
+    "/motionDesignPage": "/motionDesignPage.html",
+
+    // 👉 add more routes here like /smoCalculator, /localSeo, etc.
+  };
+
+  // 2. Load a page into the outlet
+  function loadPage(path) {
+    const page = routes[path] || "/landingPage.html"; // ✅ fallback
+    fetch(page)
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("outlet").innerHTML = html;
+      })
+      .catch(() => {
+        document.getElementById("outlet").innerHTML = "<h2>404 - Page Not Found</h2>";
+      });
+  }
+
+  // 3. Handle link clicks in navbar (intercept <a> tags)
+  document.addEventListener("click", e => {
+    const link = e.target.closest("a"); // catch clicks on <a> or inside <a>
+    if (link && link.getAttribute("href").startsWith("/")) {
+      e.preventDefault();
+      const path = link.getAttribute("href");
+      history.pushState({}, "", path); // change URL without reload
+      loadPage(path);
+    }
+  });
+
+  // 4. Handle back/forward browser buttons
+  window.addEventListener("popstate", () => {
+    loadPage(window.location.pathname);
+  });
+
+  // 5. Load page on first visit
+  loadPage(window.location.pathname);
+</script>
+
+  <script src="./js/scriptS.js"></script>
+</body>
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BMDU : Alumni Page web development</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- CSS Linke  -->
+  <link rel="stylesheet" href="./css/styleG.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    
+  <div class="container-fluid">
+  <section class="hero-section2">
+    <!-- Background Ring -->
+    <img src="./images/freepik__upload__15539 1.jpg" alt="Background Ring" class="bg-ring">
+
+    <!-- Top small text -->
+    <div class="hero-small-text">Meet With ____</div>
+
+    <!-- Heading -->
+    <h1 class="hero-heading">Real Careers.</h1>
+
+    <!-- Trust + avatars BEFORE the text "Real Impact." -->
+    <div class="impact-row ">
+      <div class="trust-avatar-row">
+        <img src="./images/image 2.jpg" alt="Trustpilot" class="trustpilot">
+        <img src="./images/Ellipse 331.jpg" alt="Avatar 1">
+        <img src="./images/Ellipse 332.jpg" alt="Avatar 2">
+        <img src="./images/Ellipse 333.jpg" alt="Avatar 3">
+        <img src="./images/Ellipse 334.jpg" alt="Avatar 4">
+        <img src="./images/icon 9.svg" alt="+9">
+      </div>
+      <div class="impact-text  ">Real Impact.</div>
+    </div>
+
+    <!-- Subtext -->
+    <p class="hero-subtext ">
+      Meet the brilliant minds who once trained with us—and are now shaping the
+      future of tech at top companies worldwide.
+    </p>
+
+    <!-- Buttons -->
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <a href="#" class="btn  btn-custom">Get Started Today</a>
+      <a href="#" class="btn btn-outline-dark  text-black">Learn More →</a>
+    </div>
+  </section>
+  </div>
+  
+
+
+  <div class="container my-4">
+    <div class="image-wrapper">
+      <img src="./images/Rectangle 3600.png" alt="Legacy Image" class="img-fluid" />
+      <div class="text-overlay ">
+        <h2 class="mt-3">A Legacy of Growth and Guidance</h2>
+        <p class="mt-3">
+          With more than 10 years of industry-aligned training, we’re proud to have mentored thousands of learners into confident tech professionals. Our alumni are working with startups, unicorns, and Fortune 500 companies across the globe.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <style>
+
+
+    .counter-section {
+      padding: 60px 0;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .counter-section h2,
+    .counter-section p {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .counter-section.in-view h2,
+    .counter-section.in-view p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .counter-box {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
+
+    .counter-box.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .counter {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .label {
+      font-size: 1rem;
+      color: #666;
+    }
+  </style>
+
+
+  <section class="counter-section" id="counterSection">
+    <div class="container">
+      <h2 class="fw-bold display-1">Numbers That Reflect Our Legacy</h2>
+      <p class="text-muted">Every number represents a story of hard work, transformation, and success.</p>
+
+      <div class="row text-center mt-5">
+        <div class="col-6 col-md-3 mb-4 counter-box">
+          <div class="counter" data-target="25356">0</div>
+          <div class="label">Professionals Trained</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4 counter-box">
+          <div class="counter" data-target="1050">0</div>
+          <div class="label">Hours of Work</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4 counter-box">
+          <div class="counter" data-target="25">0</div>
+          <div class="label">Hiring Partners</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4 counter-box">
+          <div class="counter" data-target="95" data-suffix="%">0%</div>
+          <div class="label">Success Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+<section class="how-it-works-section">
+  <div class="container">
+    <h2 class="fw-bold mb-5">How it works</h2>
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="step-card h-100">
+          <div class="step-title   fs-4">Apply for a Program</div>
+          <div class="step-text">Choose from industry-driven courses and get started with onboarding.</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="step-card h-100">
+          <div class="step-title    fs-4">Build-in Demand skills</div>
+          <div class="step-text">Learn through live projects, mentorship, and hands-on coding.</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="step-card h-100">
+          <div class="step-title  fs-4">Get Career Support</div>
+          <div class="step-text">Craft a strong resume, build your portfolio, and ace interviews.</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="step-card h-100">
+          <div class="step-title  fs-4">Become an Alumni</div>
+          <div class="step-text">Land your dream job and join our global network of achievers.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="review-section">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Our Alumni Review</h2>
+
+  
+    <!-- Carousel -->
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="review-card">
+          <p class="fw-bold">My best pick so far</p>
+          <p>Warrant present garrets limited cordial in inquiry to. Supported me sweetness behaviour shameless excellent so arranging.</p>
+          <div class="star">★★★★★</div>
+          <p class="mt-2 fw-semibold">Paul</p>
+        </div>
+        <div class="review-card">
+          <p class="fw-bold">Never this amazed</p>
+          <p>Warrant present garrets limited cordial in inquiry to. Supported me sweetness behaviour shameless excellent so arranging.</p>
+          <div class="star">★★★★★</div>
+          <p class="mt-2 fw-semibold">Julian Vidal</p>
+        </div>
+        <div class="review-card">
+          <p class="fw-bold">Thank you!</p>
+          <p>Warrant present garrets limited cordial in inquiry to. Supported me sweetness behaviour shameless excellent so arranging.</p>
+          <div class="star">★★★★★</div>
+          <p class="mt-2 fw-semibold">Fabian Vidal</p>
+        </div>
+        <div class="review-card">
+          <p class="fw-bold">Awesome program</p>
+          <p>Learned a lot and improved my skills drastically. A life-changing experience.</p>
+          <div class="star">★★★★★</div>
+          <p class="mt-2 fw-semibold">Tanya Ghosh</p>
+        </div>
+        <div class="review-card">
+          <p class="fw-bold">Very supportive</p>
+          <p>Mentors and peers helped me throughout. Highly recommended!</p>
+          <div class="star">★★★★★</div>
+          <p class="mt-2 fw-semibold">Arjun Singh</p>
+        </div>
+        <div class="review-card">
+          <p class="fw-bold">Landed my dream job</p>
+          <p>Thanks to the training, I got placed at my dream company within weeks.</p>
+          <div class="star">★★★★★</div>
+          <p class="mt-2 fw-semibold">Sneha R.</p>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+    <!-- Arrows -->
+    <div class="d-flex justify-content-center arrow-container  mt-5 py-5">
+      <button class="arrow-btn" id="prevBtn">←</button>
+      <button class="arrow-btn" id="nextBtn">→</button>
+    </div>
+
+</section>
+
+
+
+
+<!-- three card and top text  -->
+<div class="container ">
+  <!-- Heading -->
+  <div class="col-md-7 mb-4">
+    <h1 class="section-titles">Latest news & posts</h1>
+    <p class="text-muted">
+      We are the top digital marketing agency for branding corp. We offer a full range of
+      services to help clients improve their search engine rankings and visibility.
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card border-0 h-100">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="d-flex align-items-center"><span class="circle circle-blue me-2"></span></span>
+            <span class="read-meta text-muted">5 min read</span>
+          </div>
+          <h5 class="card-title mb-3">How a Digital Marketing Agency Can Boost Your Business</h5>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <p class="desc-text mb-0">We are the top digital marketing agency for branding corp. We
+              offer a full rang engine ...</p>
+            <button
+              class="arrow-btn ms-3 btn btn-outline-secondary rounded-pill mt-4 d-flex align-items-center justify-content-center btn"
+              style="width: 65px; height: 41px;">
+              <i class="bi bi-arrow-right text-black fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card border-0 h-100">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="d-flex align-items-center"><span class="circle circle-red me-2"></span></span>
+            <span class="read-meta text-muted">5 min read</span>
+          </div>
+          <h5 class="card-title mb-3">The Latest Trends and Strategies with a Digital Marketing Agency
+          </h5>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <p class="desc-text mb-0">Working with this digital marketing agency has been a true
+              partnership. They have tak...</p>
+            <button
+              class="arrow-btn ms-3 btn btn-outline-secondary rounded-pill mt-4 d-flex align-items-center justify-content-center btn"
+              style="width: 65px; height: 41px;">
+              <i class="bi bi-arrow-right text-black fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card border-0 h-100">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="d-flex align-items-center"><span class="circle circle-purple me-2"></span></span>
+            <span class="read-meta text-muted">5 min read</span>
+          </div>
+          <h5 class="card-title mb-3">Maximizing ROI with the Expertise of a Digital Marketing Agency</h5>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <p class="desc-text mb-0">What sets this digital marketing agency apart is their commitment
+              to transparency a...</p>
+            <button
+              class="arrow-btn ms-3 btn btn-outline-secondary rounded-pill mt-4 d-flex align-items-center justify-content-center btn"
+              style="width: 65px; height: 41px;">
+              <i class="bi bi-arrow-right text-black fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  
+
+<section class="py-5 text-center">
+  <div class="container">
+    <!-- Dashboard Image -->
+    <img src="./images/browser 01.jpg" alt="Dashboard UI" class="dashboard-img mb-5">
+
+    <!-- Feature Items -->
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6 mb-4 feature-card">
+        <img src="./images/Group 1272628854.svg" alt="Project Icon" class="feature-icon">
+        <h5 class="fw-bold">Project management</h5>
+        <p class="text-muted">With lots of unique blocks, you can easily build a page without coding. Build your next landing.</p>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4 feature-card">
+        <img src="./images/Group 1272628855.svg" alt="Time Icon" class="feature-icon">
+        <h5 class="fw-bold">Time tracking</h5>
+        <p class="text-muted">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4 feature-card">
+        <img src="./images/smartphone.svg" alt="Mobile App Icon" class="img-fluid" style="margin-bottom: 10px;  width: 40px;">
+        <h5 class="fw-bold">Beautiful mobile app</h5>
+        <p class="text-muted">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    
+ 
+
+<section class="py-5 ">
+  <div class="container">
+    <h2 class="fw-bold   text-center">Events</h2>
+    <p class="text-muted mb-5  ">Explore our diverse portfolio showcasing innovative solutions that drive success and inspire creativity.</p>
+    <div class="row g-4">
+      
+      <!-- Event Card 1 -->
+      <div class="col-md-4">
+        <div class="event-card p-3 h-100">
+          <img src="./images/Rectangle 18.png" alt="Operation Zephyr" class="img-fluid w-100 mb-3">
+          <h5 class="fw-bold">Operation Zephyr</h5>
+          <p class="event-date">November 30, 2021</p>
+          <p class="event-description">The Fack Project is an innovative initiative aimed at transforming urban spaces through sustainable design. By integrating green technology and community engagement...</p>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="col-md-4">
+        <div class="event-card p-3 h-100">
+          <img src="./images/Rectangle 19.jpg" alt="Quantum Leap Initiative" class="img-fluid w-100 mb-3">
+          <h5 class="fw-bold">Quantum Leap Initiative</h5>
+          <p class="event-date">November 30, 2021</p>
+          <p class="event-description">Quantum Leap introduced AI-driven models to improve resource efficiency across smart cities.</p>
+        </div>
+      </div>
+
+      <!-- Event Card 3 -->
+      <div class="col-md-4">
+        <div class="event-card p-3 h-100">
+          <img src="./images/Rectangle 19.png" alt="Project Phoenix" class="img-fluid w-100 mb-3">
+          <h5 class="fw-bold">Project Phoenix</h5>
+          <p class="event-date">November 30, 2021</p>
+          <p class="event-description">Project Phoenix is focused on revitalizing underdeveloped tech ecosystems through innovation and mentorship.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="container py-5  px-5 ">
+  <div class="row g-4">
+
+    <!-- Left Column -->
+    <div class="col-lg-4">
+      <!-- Clients Card -->
+      <div class="blue-card mb-4">
+        <div class="d-flex mb-3">
+          <img src="./images/Ellipse 285.jpg" alt="Profile 1" class="profile-img">
+          <img src="./images/Ellipse 286.png" alt="Profile 2" class="profile-img">
+          <img src="./images/Ellipse 151.jpg" alt="Profile 3" class="profile-img">
+        </div>
+        <div>
+          <h6>Clients</h6>
+          <h2>2k+ <span class="fs-6">customer</span></h2>
+        </div>
+      </div>
+
+      <!-- Growth Card: TEXT LEFT - GRAPH RIGHT -->
+      <div class="blue-card">
+        <div class="row">
+          <!-- Left: Text Content -->
+          <div class="col-4 d-flex flex-column justify-content-center">
+            <div>
+              <h6 class="mb-0">COMPANY</h6>
+              <strong>GROWTH</strong>
+              <p class="text-muted mt-3 mb-0">March 15, 2025</p>
+            </div>
+          </div>
+
+          <!-- Right: Arrow + Bars -->
+          <div class="col-5 bar-group-vertical  " >
+            <img src=./images/Vector 34.svg" alt="Arrow" class="arrow-img   img-fluid  ">
+            <img src="./images/Container 3.svg" alt="Bar 1" class="bar-img   ">
+            <img src="./images/Container 2.svg" alt="Bar 2" class="bar-img   ">
+            <img src="./images/Container.svg" alt="Bar 3" class="bar-img   ">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-6 position-relative   mb-5">
+      <div class="feature-box">
+        <h6><strong>Key Features:</strong></h6>
+        <ul>
+          <li class="feature-text   fs-4 fw-semibold"><strong>Alumni Directory:</strong>  A searchable database of alumni, often with contact information 
+and professional details.</li>
+          <li class="feature-text   fs-4 fw-semibold">Event Listings: Information about 
+upcoming reunions, networking events, 
+and other gatherings.</li>
+          <li class="feature-text   fs-4 fw-semibold">News & Updates: : Information about the 
+institution, its programs, and its alumni 
+community</li>
+          <li class="feature-text   fs-4 fw-semibold">Career Services:  Job boards, resume and 
+interview resources, and mentoring 
+programs</li>
+          <li class="feature-text   fs-4 fw-semibold">Donation Platforms:  Secure online giving 
+portals for alumni to contribute to the 
+institution.</li>
+        </ul>
+
+        <!-- Floating Stats -->
+        <div class="stat-floating ">
+          <div class="stat-box">
+            <h6>Clients</h6>
+            <h4>450+</h4>
+          </div>
+          <div class="stat-box">
+            <h6>Projects</h6>
+            <h4>1k+</h4>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+ 
+
+
+
+
+
+
+<section class="container py-5">
+  <h2 class="text-center fw-bold mb-4">How We Increased<br>Conversions by 45%</h2>
+
+  <!-- ✅ No "carousel-fade" for default sliding animation -->
+  <div id="caseStudyCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#caseStudyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#caseStudyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#caseStudyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6 position-relative carousel-img">
+            <img src="./images/campaign-creators-qCi_MzVODoU-unsplash.jpg" alt="Case Study 1">
+            <div class="overlay-text">
+              <div>Innovative Design Solutions</div>
+              <small>Case Study ></small>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5 class="fw-bold">Fashion E-Commerce Brand with Targeted Email Automation</h5>
+            <p class="text-muted">We partnered with a growing fashion e-commerce brand to revamp their email marketing. By implementing personalized automated sequences, abandoned cart flows, and seasonal campaigns, we increased user engagement and boosted conversions significantly within three months.</p>
+            <ul class="list-unstyled">
+              <li><strong>Click-Through Rate:</strong> +28%</li>
+              <li><strong>Sales Conversions:</strong> +36%</li>
+              <li><strong>Open Rate Improvement:</strong> +40%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6 position-relative carousel-img">
+            <img src="./images/campaign-creators-qCi_MzVODoU-unsplash.jpg" alt="Case Study 2">
+            <div class="overlay-text">
+              <div>Smart Campaign Strategies</div>
+              <small>Case Study ></small>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5 class="fw-bold">Retail Brand Social Engagement Boost</h5>
+            <p class="text-muted">We helped a retail brand improve their Instagram and TikTok presence by introducing a viral content loop. Over 60 days, follower count grew by 250% and post engagement jumped by 80%.</p>
+            <ul class="list-unstyled">
+              <li><strong>Engagement Increase:</strong> +80%</li>
+              <li><strong>Followers Growth:</strong> +250%</li>
+              <li><strong>Conversion from Social:</strong> +22%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6 position-relative carousel-img">
+            <img src="./images/campaign-creators-qCi_MzVODoU-unsplash.jpg" alt="Case Study 3">
+            <div class="overlay-text">
+              <div>Data-Driven Optimization</div>
+              <small>Case Study ></small>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5 class="fw-bold">B2B SaaS Funnel Optimization</h5>
+            <p class="text-muted">A B2B SaaS startup partnered with us to improve conversion through their onboarding funnel. We ran A/B testing, heatmaps, and analytics tracking to identify bottlenecks and improved their sign-up rate by over 50%.</p>
+            <ul class="list-unstyled">
+              <li><strong>Lead Conversion:</strong> +53%</li>
+              <li><strong>Signup Rate:</strong> +47%</li>
+              <li><strong>Bounce Rate Drop:</strong> -20%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#caseStudyCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#caseStudyCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</section>   
+</section>
+
+
+<script>
+
+//  const counters = document.querySelectorAll('.counter');
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const suffix = counter.getAttribute('data-suffix') || '';
+      const count = +counter.innerText.replace(/\D/g, '');
+
+      const increment = target / 100;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment).toLocaleString() + suffix;
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target.toLocaleString() + suffix;
+      }
+    };
+
+    updateCount();
+  });
+
+
+
+
+
+
+  const track = document.getElementById('carouselTrack');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const cards = document.querySelectorAll('.review-card');
+
+  let currentIndex = 0;
+
+  function getVisibleCount() {
+    return window.innerWidth >= 768 ? 3 : 1;
+  }
+
+  function updateCarousel() {
+    const visibleCount = getVisibleCount();
+    const cardWidth = cards[0].offsetWidth + 20; // 20px margin compensation
+    const maxIndex = cards.length - visibleCount;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+    // Highlight center card
+    cards.forEach(card => card.classList.remove('highlight'));
+    const center = currentIndex + Math.floor(visibleCount / 2);
+    if (cards[center]) {
+      cards[center].classList.add('highlight');
+    }
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex--;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex++;
+    updateCarousel();
+  });
+
+  window.addEventListener('resize', () => {
+    updateCarousel();
+  });
+
+  // Initial load
+  window.addEventListener('load', updateCarousel);
+
+
+
+
+  function setActiveButton(button) {
+  prevBtn.classList.remove('active-arrow');
+  nextBtn.classList.remove('active-arrow');
+  button.classList.add('active-arrow');
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex--;
+  updateCarousel();
+  setActiveButton(prevBtn);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex++;
+  updateCarousel();
+  setActiveButton(nextBtn);
+});
+
+</script>
+
+<script>
+    
+    const counters = document.querySelectorAll(".counter");
+    const boxes = document.querySelectorAll(".counter-box");
+    const section = document.getElementById("counterSection");
+
+    function animateCounters() {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute("data-target");
+        const suffix = counter.getAttribute("data-suffix") || "";
+        const duration = 2000;
+        const increment = target / (duration / 16);
+        let count = 0;
+
+        function update() {
+          count += increment;
+          if (count < target) {
+            counter.textContent = Math.floor(count) + suffix;
+            requestAnimationFrame(update);
+          } else {
+            counter.textContent = target + suffix;
+          }
+        }
+
+        update();
+      });
+
+      boxes.forEach((box, i) => {
+        setTimeout(() => box.classList.add("animate"), i * 200);
+      });
+
+      section.classList.add("in-view");
+    }
+
+    function resetCounters() {
+      counters.forEach(counter => {
+        const suffix = counter.getAttribute("data-suffix") || "";
+        counter.textContent = "0" + suffix;
+      });
+
+      boxes.forEach(box => box.classList.remove("animate"));
+      section.classList.remove("in-view");
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+        } else {
+          resetCounters();
+        }
+      });
+    }, { threshold: 0.4 });
+
+    observer.observe(section);
+  </script>
+
+
+
+
+
+<!-- Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
